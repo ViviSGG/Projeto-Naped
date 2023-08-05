@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --brand-color: #8257e6;
+    --dark-10: #13131f;
+    --dark-20: #282830;
+    --dark-30: #c4c4c4;
+    --dark-40: #fefbfb;
+    --support-01: #2962ff;
+    --support-02: #0bb07b;
+    --support-03: #ffce52;
+    --support-04: #f03d3d;
+    --support-05: #e0e0e0;
+}
+  
+body {
+    background-color: var(--dark-10);
+}
+  
+header {
+    display: flex;
+    height: 14vh;
+    justify-content: center;
+    align-items: center;
+}
+  
+header section {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav {
+    display: flex;
+    width: 52vw;
+    justify-content: flex-end;
+}
+  
+ul {
+    display: flex;
+    width: 36vw;
+    justify-content: space-between;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+li {
+    border-top: 3px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding: 2px;
+}
+
+#home {
+    border-top: 3px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid var(--brand-color);
+    padding: 2px;
+}
+  
+a {
+    color: white;
+    text-decoration: none;
+}
+  
+header h2 {
+    color: var(--brand-color);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 24px;
+}
+  
+header h3 {
+    border: solid 1px var(--brand-color);
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 14px;
+    width: 133px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 8vh;
+}
+
+.box1 h1 {
+    color: var(--dark-40);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    width: 324px;
+}
+  
+.box1 p {
+    color: var(--dark-30);
+    line-height: 32px;
+    width: 412px;
+    font-size: 20px;
+}
+
+.box2 {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    margin-top: 8vh;
+}
+
+.primeira-figure img {
+    width: 52vw;
+    height: 64vh;
+}
+
+.segunda-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.segunda-figure img {
+    width: 24vw;
+}
+
+.box3 {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    margin-top: 8vh;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noticia {
+    display: flex;
+}
+
+.noticia div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vw;
+    margin-left: 1.5vw;
+}
+
+.noticia img {
+    width: 14vw;
+}
+
+.noticia h3 {
+    font-family: "Lexend Deca";
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--dark-40);
+}
+
+.noticia p {
+    font-family: "Inter";
+    font-size: 11px;
+    line-height: 16px;
+    color: var(--dark-30);
+}
+
+.noticia h4 {
+    font-family: "Lexend Deca";
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--dark-40);
+}
+
+.noticia button {
+    background-color: var(--brand-color);
+    color: var(--dark-40);
+    font-family: "Inter";
+    font-size: 11px;
+    line-height: 20px;
+    width: 100px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.container2 img {
+    width: 24vw;
+    margin-top: 4vh;
+}
+
+.container2 h2 {
+    display: inline;
+    font-family: "Lexend Deca";
+    font-size: 24px;
+    line-height: 20px;
+    color: var(--dark-40);
+    border-bottom: 3px solid var(--brand-color);
+    padding: 6px 0;
+}
+
+.box4 {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    margin-top: 8vh;
+    align-items: start;
+}
+
+.box4 h2 {
+    font-family: "Lexend Deca";
+    font-size: 24px;
+    line-height: 20px;
+    color: var(--dark-40);
+    border-bottom: 3px solid var(--brand-color);
+    padding: 8px 0;
+}
+
+.box4 img {
+    width: 24vw;
+}
+
+.box4 figure {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    margin-top: 6vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+footer h2 {
+    color: var(--brand-color);
+    font-family: "Lexend Deca";
+    font-size: 24px;
+    line-height: 30px;
+}
+
+footer p {
+    color: var(--dark-30);
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
