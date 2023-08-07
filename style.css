@@ -211,6 +211,19 @@ main {
     width: 90%;
 }
 
+.etiqueta-small h3 {
+    display: flex;
+    background-color: var(--brand-color);
+    color: var(--dark-40);
+    width: 60px;
+    height: 15px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-family: "Lexend Deca";
+}
+
 .box3 {
     display: flex;
     width: 80vw;
@@ -234,6 +247,7 @@ main {
     background-size: cover;
     width: 13vw;
     height: 20vh;
+    padding: 1.5vh;
 }
 
 .imagem15 {
@@ -242,6 +256,7 @@ main {
     background-size: cover;
     width: 13vw;
     height: 20vh;
+    padding: 1.5vh;
 }
 
 .imagem09 {
@@ -250,6 +265,7 @@ main {
     background-size: cover;
     width: 13vw;
     height: 20vh;
+    padding: 1.5vh;
 }
 
 .imagem05 {
@@ -258,6 +274,7 @@ main {
     background-size: cover;
     width: 13vw;
     height: 20vh;
+    padding: 1.5vh;
 }
 
 .imagem14 {
@@ -266,9 +283,10 @@ main {
     background-size: cover;
     width: 13vw;
     height: 20vh;
+    padding: 1.5vh;
 }
 
-.noticia div {
+.descricao {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -280,7 +298,7 @@ main {
     width: 14vw;
 }
 
-.noticia h3 {
+.descricao h3 {
     font-family: "Lexend Deca";
     font-size: 13px;
     line-height: 20px;
