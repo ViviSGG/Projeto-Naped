@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+:root {
+  --brand-color: #8257e6;
+  --dark-10: #13131f;
+  --dark-20: #282830;
+  --dark-30: #c4c4c4;
+  --dark-40: #fefbfb;
+  --support-01: #2962ff;
+  --support-02: #0bb07b;
+  --support-03: #ffce52;
+  --support-04: #f03d3d;
+  --support-05: #e0e0e0;
+}
+  
+body {
+  background-color: var(--dark-10);
+}
+
+header {
+  display: flex;
+  height: 14vh;
+  justify-content: center;
+  align-items: center;
+}
+  
+header section {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  width: 52vw;
+  justify-content: flex-end;
+}
+
+ul {
+  display: flex;
+  width: 36vw;
+  justify-content: space-between;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+li {
+  border-top: 3px solid rgba(0, 0, 0, 0);
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  padding: 2px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+  
+header h2 {
+  color: var(--brand-color);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 24px;
+}
+
+header h3 {
+  border: solid 1px var(--brand-color);
+  padding: 5px 20px;
+  border-radius: 30px;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  width: 133px;
+}
+  
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+/* primeira sesão */
+.secao1 {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-top: 7vh;
+}
+
+h1 {
+  font-family: "Lexend Deca";
+  font-size: 36px;
+  line-height: 55px;
+  color: var(--dark-40);
+  margin-bottom: 1vh;
+}
+
+.secao1 p {
+  font-family: Inter;
+  font-size: 22px;
+  color: var(--dark-30);
+  line-height: 55px;
+}
+  
+.secao1 h3 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-30);
+}
+
+.secao2 P, .secao3 p {
+  font-family: Inter;
+  font-size: 22px;
+  color: var(--dark-30);
+  line-height: 40px;
+  margin-top: 4vh;
+}
+
+/* segunda seção ´*/
+.secao2 {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.img1 {
+  background-image: url("./assets/17.png");
+  background-position: center;
+  background-size: cover;
+  height: 64vh;
+  padding: 2vh 1vw;
+  margin-top: 4vh;
+}
+
+.img1 h3 {
+  display: flex;
+  background-color: var(--brand-color);
+  color: var(--dark-40);
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Lexend Deca";
+}
+
+/* terceira seção´*/
+.secao3 {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.img2 {
+  background-image: url("./assets/18.png");
+  background-position: top;
+  background-size: cover;
+  height: 57vh;
+  padding: 2vh 1vw;
+  margin-top: 4vh;
+}
+
+/* quarta seção´*/
+.box4 {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  margin-top: 10vh;
+  align-items: start;
+}
+
+.box4 h2 {
+  font-family: "Lexend Deca";
+  font-size: 24px;
+  line-height: 20px;
+  color: var(--dark-40);
+  border-bottom: 3px solid var(--brand-color);
+  padding: 8px 0;
+}
+
+.imagem17 {
+  display: flex;
+  background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/17.png");
+  background-size: cover;
+  width: 25vw;
+  height: 32vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0 2vh 0;
+  border: 3px solid var(--brand-color);
+}
+
+.imagem10 {
+  display: flex;
+  background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/10.png");
+  background-size: cover;
+  width: 25vw;
+  height: 32vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0 2vh 0;
+}
+
+.imagem19 {
+  display: flex;
+  background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/19.png");
+  background-size: cover;
+  width: 25vw;
+  height: 32vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0 2vh 0;
+}
+
+.imagem13 {
+  display: flex;
+  background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/13.png");
+  background-size: cover;
+  width: 25vw;
+  height: 32vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0 2vh 0;
+}
+
+.imagem20 {
+  display: flex;
+  background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/20.png");
+  background-size: cover;
+  width: 25vw;
+  height: 32vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0 2vh 0;
+}
+
+.imagem04 {
+  display: flex;
+  background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/04.png");
+  background-size: cover;
+  width: 25vw;
+  height: 32vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 0 2vh 0;
+}
+
+.sub-box4 {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  margin-top: 6vh;
+}
+
+.etiqueta-mean {
+  width: 90%;
+}
+
+.etiqueta-mean h3 {
+  display: flex;
+  background-color: var(--brand-color);
+  color: var(--dark-40);
+  width: 70px;
+  height: 20px;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Lexend Deca";
+}
+
+.p-size-14 {
+  color: var(--dark-40);
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Lexend Deca";
+  width: 90%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin-top: 4vh;
+}
+
+footer h2 {
+  color: var(--brand-color);
+  font-family: "Lexend Deca";
+  font-size: 24px;
+  line-height: 30px;
+}
+
+footer p {
+  color: var(--dark-30);
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: 500px;
+  margin-top: 2vh;
+}
