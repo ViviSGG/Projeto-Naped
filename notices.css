@@ -16,6 +16,10 @@
   --support-04: #f03d3d;
   --support-05: #e0e0e0;
 }
+
+.no-desktop {
+  display: none;
+}
   
 body {
   background-color: var(--dark-10);
@@ -23,9 +27,12 @@ body {
 
 header {
   display: flex;
-  height: 14vh;
+  height: 12vh;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: var(--dark-10);
 }
   
 header section {
@@ -53,7 +60,13 @@ ul {
 li {
   border-top: 3px solid rgba(0, 0, 0, 0);
   border-bottom: 2px solid rgba(0, 0, 0, 0);
-  padding: 2px;
+  padding: 4px;
+}
+
+li:hover {
+  border-top: 3px solid rgba(0, 0, 0, 0);
+  border-bottom: 2px solid var(--brand-color);
+  padding: 4px;
 }
 
 a {
@@ -61,9 +74,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   color: var(--brand-color);
-}
+} */
   
 header h2 {
   color: var(--brand-color);
@@ -72,8 +85,10 @@ header h2 {
 }
 
 header h3 {
+  display: flex;
+  justify-content: center;
   border: solid 1px var(--brand-color);
-  padding: 5px 20px;
+  padding: 6px 20px;
   border-radius: 30px;
   color: white;
   font-family: "Lexend Deca", sans-serif;
@@ -82,7 +97,7 @@ header h3 {
 }
 
 .conta:hover {
-  color: var(--brand-color);
+  background-color: var(--brand-color);
 }
   
 main {
@@ -97,7 +112,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 80vw;
-  margin-top: 7vh;
+  margin-top: 18vh;
 }
 
 h1 {
@@ -142,7 +157,7 @@ h1 {
   background-position: center;
   background-size: cover;
   height: 64vh;
-  padding: 2vh 1vw;
+  padding: 20px;
   margin-top: 4vh;
 }
 
@@ -197,6 +212,7 @@ h1 {
   display: flex;
   background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/17.png");
   background-size: cover;
+  background-position: center;
   width: 25vw;
   height: 32vh;
   flex-direction: column;
@@ -210,6 +226,7 @@ h1 {
   display: flex;
   background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/10.png");
   background-size: cover;
+  background-position: center;
   width: 25vw;
   height: 32vh;
   flex-direction: column;
@@ -222,6 +239,7 @@ h1 {
   display: flex;
   background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/19.png");
   background-size: cover;
+  background-position: center;
   width: 25vw;
   height: 32vh;
   flex-direction: column;
@@ -234,6 +252,7 @@ h1 {
   display: flex;
   background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/13.png");
   background-size: cover;
+  background-position: center;
   width: 25vw;
   height: 32vh;
   flex-direction: column;
@@ -246,6 +265,7 @@ h1 {
   display: flex;
   background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/20.png");
   background-size: cover;
+  background-position: center;
   width: 25vw;
   height: 32vh;
   flex-direction: column;
@@ -258,6 +278,7 @@ h1 {
   display: flex;
   background-image: linear-gradient(to bottom, #13131f00, #13131F), url("./assets/04.png");
   background-size: cover;
+  background-position: center;
   width: 25vw;
   height: 32vh;
   flex-direction: column;
@@ -322,4 +343,103 @@ footer p {
   text-align: center;
   width: 500px;
   margin-top: 2vh;
+}
+
+@media (max-width:850px) {
+  .no-mobile {
+      display: none;
+  }
+
+  .no-desktop {
+      display: flex;
+  }
+
+  .menu {
+      width: 24px;
+      height: 24px;
+  }
+
+  header {
+      height: 18vh;
+  }
+
+  header section {
+      flex-direction: column;
+  }
+
+  header div {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4vh;
+  }
+
+  header h3 {
+      width: 80vw;
+  }
+
+  .secao1 {
+    margin-top: 22vh;
+  }
+
+  h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  
+  .secao1 p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+    
+  .secao1 h3 {
+    margin-top: 3vh;
+    font-size: 12px;
+  }
+
+  .img1 {
+    padding: 14px;
+    height: 40vh;
+  }
+
+  .img1 h3 {
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .secao2 P, .secao3 p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 2vh;
+  }
+
+  .box4 h2 {
+    margin-bottom: 4vh;
+    font-size: 18px;
+  }
+
+  .sub-box4 {
+      flex-direction: column;
+      margin-top: 0;
+      gap: 20px;
+  }
+
+  .p-size-14 {
+      font-size: 12px;
+  }
+
+  .imagem17, .imagem10, .imagem19, .imagem13, .imagem20, .imagem04 {
+      width: 100%;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  footer p {
+      width: 80vw;
+      font-size: 12px;
+  }
 }
